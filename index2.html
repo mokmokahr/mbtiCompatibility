@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>256combinations</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <nav>256combinations</nav>
+    </header>
+    <div id="text-box">
+        <p>Let me know you and other person's MBTI.</p>
+    </div>
+
+    <div id="container">
+        <nav id="you-checkbox" class="checkingbox">
+            <div class="line" id="yello"></div>
+            <h1>YOU</h1>
+            <table class="checkings">
+                <input checked="checked" class="green_" type="radio" name="e/i-1" value="i">i
+                <input checked="checked" class="green_" type="radio" name="s/n-1" value="n">n
+                <input checked="checked" class="green_" type="radio" name="t/f-1" value="f">f
+                <input checked="checked" class="green_" type="radio" name="j/p-1" value="p">p
+                <br/>
+                <input class="green_" type="radio" name="e/i-1" value="e">e
+                <input class="green_" type="radio" name="s/n-1" value="s">s
+                <input class="green_" type="radio" name="t/f-1" value="t">t
+                <input class="green_" type="radio" name="j/p-1" value="j">j
+            </table>
+        </nav>
+        <nav id="other-checkbox" class="checkingbox">
+            <div class="line" id="red"></div>
+            <h1>OTHER</h1>
+            <div class="checkings">
+                <input checked="checked" class="purple_" type="radio" name="e/i-2" value="i">i
+                <input checked="checked" class="purple_" type="radio" name="s/n-2" value="n">n
+                <input checked="checked" class="purple_" type="radio" name="t/f-2" value="f">f
+                <input checked="checked" class="purple_" type="radio" name="j/p-2" value="p">p
+                <br/>
+                <input class="purple_" type="radio" name="e/i-2" value="e">e
+                <input class="purple_" type="radio" name="s/n-2" value="s">s
+                <input class="purple_" type="radio" name="t/f-2" value="t">t
+                <input class="purple_" type="radio" name="j/p-2" value="j">j
+            </div>
+        </nav>
+    </div>
+    <button id="view" onclick="getResult(); goNextPage();">view the result</button>
+    <script src="script2.js"></script>
+</body>
+</html>
