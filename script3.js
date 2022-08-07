@@ -18,7 +18,7 @@ document.getElementById("second").innerHTML = otherResults;
 const colorbar = document.querySelector("#color-bar");
 const explainText = document.getElementById("combination-explain");
 const longText = document.getElementById("detailed-explain");
-let condition = 4;
+let condition = 0;
 
 const compare = ['infp','enfp','infj','enfj','intj','entj','intp','entp','isfp','esfp','istp','estp','isfj','esfj','istj','estj']
 myResults = myResults.toLowerCase();
