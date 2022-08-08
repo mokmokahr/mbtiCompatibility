@@ -1,4 +1,3 @@
-//second page
 let myResults = sessionStorage.getItem("myresult");//데이터 받아오기
 let otherResults = sessionStorage.getItem("otherresult");
 
@@ -18,16 +17,623 @@ document.getElementById("second").innerHTML = otherResults;
 const colorbar = document.querySelector("#color-bar");
 const explainText = document.getElementById("combination-explain");
 const longText = document.getElementById("detailed-explain");
-let condition = 0;
-
-const compare = ['infp','enfp','infj','enfj','intj','entj','intp','entp','isfp','esfp','istp','estp','isfj','esfj','istj','estj']
+const compare = ['infp','enfp','infj','enfj','intj','entj','intp','entp','isfp','esfp','istp','estp','isfj','esfj','istj','estj'];
 myResults = myResults.toLowerCase();
 otherResults = otherResults.toLowerCase();
 let myresultNum = -1;
 let otherresultNum  = -1;
-const personalTextme = document.getElementById("explain-me");
-const personalTextother = document.getElementById("explain-other");
 
+
+
+for(let i = 0; i<16; i++){
+    if(myResults == compare[i]){
+        myresultNum = i;
+        console.log(i);
+    }
+    if(otherResults == compare[i]){
+        otherresultNum = i;
+        console.log(i);
+    }
+}
+
+switch(myresultNum){
+    case 0:
+        switch(otherresultNum){
+            case 0:
+                condition = 2;
+                break;
+            case 1:
+                condition = 3;
+            case 2:
+                condition = 4;
+            case 3:
+                condition = 2;
+            case 4:
+                condition = 1;
+            case 5:
+                condition = 0;
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+    case 1:
+        switch(otherresultNum){
+            case 0:
+                condition = 1
+                break;
+            case 1:
+                condition = 2
+                break;
+            case 2:
+                condition = 0
+                break;
+            case 3:
+                condition = 10
+                break;
+            case 4:
+                condition = 0
+                b
+            case 5:
+                condition = 0
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+    case 2:
+        switch(otherresultNum){
+            case 0:
+                condition = 1
+                break;
+            case 1:
+                condition = 2
+            case 2:
+                condition = 0
+            case 3:
+                condition = 10
+            case 4:
+                condition = 0
+            case 5:
+                condition = 0
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+    case 3:
+        switch(otherresultNum){
+            case 0:
+                condition = 1
+                break;
+            case 1:
+                condition = 2
+            case 2:
+                condition = 0
+            case 3:
+                condition = 10
+            case 4:
+                condition = 0
+            case 5:
+                condition = 0
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+    case 4:
+        switch(otherresultNum){
+            case 0:
+                condition = 1
+                break;
+            case 1:
+                condition = 2
+            case 2:
+                condition = 0
+            case 3:
+                condition = 10
+            case 4:
+                condition = 0
+            case 5:
+                condition = 0
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+    case 5:
+        switch(otherresultNum){
+            case 0:
+                condition = 1
+                break;
+            case 1:
+                condition = 2
+            case 2:
+                condition = 0
+            case 3:
+                condition = 10
+            case 4:
+                condition = 0
+            case 5:
+                condition = 0
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+    case 6:
+        switch(otherresultNum){
+            case 0:
+                condition = 1
+                break;
+            case 1:
+                condition = 2
+            case 2:
+                condition = 0
+            case 3:
+                condition = 10
+            case 4:
+                condition = 0
+            case 5:
+                condition = 0
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+    case 7:
+        switch(otherresultNum){
+            case 0:
+                condition = 1
+                break;
+            case 1:
+                condition = 2
+            case 2:
+                condition = 0
+            case 3:
+                condition = 10
+            case 4:
+                condition = 0
+            case 5:
+                condition = 0
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+    case 8:
+        switch(otherresultNum){
+            case 0:
+                condition = 1
+                break;
+            case 1:
+                condition = 2
+            case 2:
+                condition = 0
+            case 3:
+                condition = 10
+            case 4:
+                condition = 0
+            case 5:
+                condition = 0
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+    case 9:
+        switch(otherresultNum){
+            case 0:
+                condition = 1
+                break;
+            case 1:
+                condition = 2
+            case 2:
+                condition = 0
+            case 3:
+                condition = 10
+            case 4:
+                condition = 0
+            case 5:
+                condition = 0
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+    case 10:
+        switch(otherresultNum){
+            case 0:
+                condition = 1
+                break;
+            case 1:
+                condition = 2
+            case 2:
+                condition = 0
+            case 3:
+                condition = 10
+            case 4:
+                condition = 0
+            case 5:
+                condition = 0
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+    case 11:
+        switch(otherresultNum){
+            case 0:
+                condition = 1
+                break;
+            case 1:
+                condition = 2
+            case 2:
+                condition = 0
+            case 3:
+                condition = 10
+            case 4:
+                condition = 0
+            case 5:
+                condition = 0
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+    case 12:
+        switch(otherresultNum){
+            case 0:
+                condition = 1
+                break;
+            case 1:
+                condition = 2
+            case 2:
+                condition = 0
+            case 3:
+                condition = 10
+            case 4:
+                condition = 0
+            case 5:
+                condition = 0
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+    case 13:
+        switch(otherresultNum){
+            case 0:
+                condition = 1
+                break;
+            case 1:
+                condition = 2
+            case 2:
+                condition = 0
+            case 3:
+                condition = 10
+            case 4:
+                condition = 0
+            case 5:
+                condition = 0
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+    case 14:
+        switch(otherresultNum){
+            case 0:
+                condition = 1
+                break;
+            case 1:
+                condition = 2
+            case 2:
+                condition = 0
+            case 3:
+                condition = 10
+            case 4:
+                condition = 0
+            case 5:
+                condition = 0
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+    case 15:
+        switch(otherresultNum){
+            case 0:
+                condition = 1
+                break;
+            case 1:
+                condition = 2
+            case 2:
+                condition = 0
+            case 3:
+                condition = 10
+            case 4:
+                condition = 0
+            case 5:
+                condition = 0
+            case 6:
+                condition = 0
+            case 7:
+                condition = 0
+            case 8:
+                condition = 0
+            case 9:
+                condition = 0
+            case 10:
+                condition = 0
+            case 11:
+                condition = 0
+            case 12:
+                condition = 0
+            case 13:
+                condition = 0
+            case 14:
+                condition = 0
+            case 15:
+                condition = 0
+        }
+        break;
+}
 
 function korean(){
     switch(myresultNum){
@@ -79,8 +685,6 @@ function korean(){
         case 15:
             personalTextme.innerHTML += "</br>현실을 잘 파악하고 리더로서 역할도 잘 수행하는 체계적인 성격의 소유자";
             break;
-        
-    
     }
     
     switch(otherresultNum){
@@ -188,26 +792,4 @@ else if(condition == 4){
     longText.innerHTML = "Both of them must give in unconditionally and need empathy.";
 }
 
-
-for(let i = 0; i<16; i++){
-    if(myResults == compare[i]){
-        myresultNum = i;
-        console.log(i);
-    }
-    if(otherResults == compare[i]){
-        otherresultNum = i;
-        console.log(i);
-    }
-}
-
-
-
 korean();
-
-switch(myresultNum){
-    case 0:
-        switch(otherresultNum){
-            case 0:
-                
-        }
-}
