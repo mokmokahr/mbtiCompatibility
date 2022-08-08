@@ -1,12 +1,12 @@
 let myResults = sessionStorage.getItem("myresult");//데이터 받아오기
 let otherResults = sessionStorage.getItem("otherresult");
-
+let transNum = 0;
 
 myResults = myResults.toUpperCase();
 otherResults = otherResults.toUpperCase();
 
 const text = myResults+ " and " + otherResults+"'s compatability.";
-document.getElementById("text-box").innerHTML = text;
+document.getElementById("text-box").innerHTML += text;
 
 const personalTextme = document.getElementById("explain-me");
 const personalTextother = document.getElementById("explain-other");
@@ -36,7 +36,23 @@ for(let i = 0; i<16; i++){
     }
 }
 
+function translate(){
+    transNum ++;
+}
 
+
+function isKorean(){
+    if(transNum % 2 == 1){
+        korean();
+    }
+    else{
+        english();
+    }
+}
+
+setInterval(isKorean,100);
+
+document.querySelector("#english-korean").addEventListener("click", translate);
 
 function korean(){
     switch(myresultNum){
@@ -788,36 +804,35 @@ switch(myresultNum){//competibility
         break;
 }
 
-
-if (condition == 0){//color and font
-    colorbar.style.backgroundColor = "blue";
-    explainText.innerHTML = "ideal relationship";
-    explainText.style.backgroundColor = "blue";
-    longText.innerHTML = "Problems are resolved well and the relationship develops naturally.";
+function english(){
+    if (condition == 0){//color and font
+        colorbar.style.backgroundColor = "blue";
+        explainText.innerHTML = "ideal relationship";
+        explainText.style.backgroundColor = "blue";
+        longText.innerHTML = "Problems are resolved well and the relationship develops naturally.";
+    }
+    else if(condition == 1){
+        colorbar.style.backgroundColor = "skyblue";
+        explainText.innerHTML = "sticky relationship";
+        explainText.style.backgroundColor = "skyblue";
+        longText.innerHTML = "There may be difficulties, but you find a compromise";
+    }
+    else if(condition == 2){
+        colorbar.style.backgroundColor = "green";
+        explainText.innerHTML = "potential relationship";
+        explainText.style.backgroundColor = "green";
+        longText.innerHTML = "For a strong relationship, you need to find a change in each other's values.";
+    }
+    else if(condition == 3){
+        colorbar.style.backgroundColor = "#e4ae3a";
+        explainText.innerHTML = "conflicting relationship";
+        explainText.style.backgroundColor = "#e4ae3a";
+        longText.innerHTML = "It can only be maintained through compromise and maturity";
+    }
+    else if(condition == 4){
+        colorbar.style.backgroundColor = "rgb(255, 105, 105)";
+        explainText.innerHTML = "inappropriate relationship";
+        explainText.style.backgroundColor = "rgb(255, 105, 105)";
+        longText.innerHTML = "Both of them must give in unconditionally and need empathy.";
+    }
 }
-else if(condition == 1){
-    colorbar.style.backgroundColor = "skyblue";
-    explainText.innerHTML = "sticky relationship";
-    explainText.style.backgroundColor = "skyblue";
-    longText.innerHTML = "There may be difficulties, but you find a compromise";
-}
-else if(condition == 2){
-    colorbar.style.backgroundColor = "green";
-    explainText.innerHTML = "potential relationship";
-    explainText.style.backgroundColor = "green";
-    longText.innerHTML = "For a strong relationship, you need to find a change in each other's values.";
-}
-else if(condition == 3){
-    colorbar.style.backgroundColor = "#e4ae3a";
-    explainText.innerHTML = "conflicting relationship";
-    explainText.style.backgroundColor = "#e4ae3a";
-    longText.innerHTML = "It can only be maintained through compromise and maturity";
-}
-else if(condition == 4){
-    colorbar.style.backgroundColor = "rgb(255, 105, 105)";
-    explainText.innerHTML = "inappropriate relationship";
-    explainText.style.backgroundColor = "rgb(255, 105, 105)";
-    longText.innerHTML = "Both of them must give in unconditionally and need empathy.";
-}
-
-korean();
