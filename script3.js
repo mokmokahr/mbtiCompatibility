@@ -185,34 +185,34 @@ switch(myresultNum){//competibility
                 condition = 1;
                 break;
             case 6:
-                condition = 0
+                condition = 0;
                 break;
             case 7:
-                condition = 0
+                condition = 0;
                 break;
             case 8:
-                condition = 0
+                condition = 0;
                 break;
             case 9:
-                condition = 0
+                condition = 0;
                 break;
             case 10:
-                condition = 0
+                condition = 0;
                 break;
             case 11:
-                condition = 0
+                condition = 0;
                 break;
             case 12:
-                condition = 0
+                condition = 0;
                 break;
             case 13:
-                condition = 0
+                condition = 0;
                 break;
             case 14:
-                condition = 0
+                condition = 0;
                 break;
             case 15:
-                condition = 0
+                condition = 0;
                 break;
         }
         break;
@@ -222,39 +222,50 @@ switch(myresultNum){//competibility
                 condition = 1;
                 break;
             case 1:
-                condition = 2
+                condition = 2;
                 break;
             case 2:
-                condition = 0
+                condition = 0;
                 break;
             case 3:
-                condition = 10
+                condition = 0;
                 break;
             case 4:
-                condition = 0
-                b
+                condition = 0;
+                break;
             case 5:
-                condition = 0
+                condition = 0;
+                break;
             case 6:
-                condition = 0
+                condition = 0;
+                break;
             case 7:
-                condition = 0
+                condition = 0;
+                break;
             case 8:
-                condition = 0
+                condition = 0;
+                break;
             case 9:
-                condition = 0
+                condition = 0;
+                break;
             case 10:
-                condition = 0
+                condition = 0;
+                break;
             case 11:
-                condition = 0
+                condition = 0;
+                break;
             case 12:
-                condition = 0
+                condition = 0;
+                break;
             case 13:
-                condition = 0
+                condition = 0;
+                break;
             case 14:
-                condition = 0
+                condition = 0;
+                break;
             case 15:
-                condition = 0
+                condition = 0;
+                break;
         }
         break;
     case 2:
@@ -809,4 +820,4 @@ else if(condition == 4){
     longText.innerHTML = "Both of them must give in unconditionally and need empathy.";
 }
 
-korean(myresultNum,otherresultNum);
+korean();
