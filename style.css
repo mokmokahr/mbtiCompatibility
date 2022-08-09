@@ -51,7 +51,11 @@ footer{
     color: rgb(0, 0, 0);
     font-size: 1.5vw;
 }
-
+@media (min-width:768px) {
+    #name{
+        font-size: 5vw;
+    }
+}
 
 @media (max-width:768px){
     #gobtn{
@@ -60,6 +64,9 @@ footer{
     }
     #gobtn>p{
         font-size: 6vw;
+    }
+    #name{
+        font-weight: bold;
     }
     html{
         font-size: 20px;

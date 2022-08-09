@@ -1,3 +1,6 @@
+let counter = sessionStorage.getItem("translateCount");
+console.log(counter);
+
 let resultMe = ['','','',''];
 let resultOther = ['','','',''];
 
