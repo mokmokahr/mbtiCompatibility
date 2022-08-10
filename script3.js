@@ -4,8 +4,6 @@ let otherResults = sessionStorage.getItem("otherresult");
 myResults = myResults.toUpperCase();
 otherResults = otherResults.toUpperCase();
 
-document.getElementById("text-box").innerHTML += myResults+ " and " + otherResults+"'s compatability.";
-
 const personalTextme = document.getElementById("explain-me");
 const personalTextother = document.getElementById("explain-other");
 
@@ -14,6 +12,7 @@ personalTextother.innerHTML = otherResults;
 
 document.getElementById("first").innerHTML = myResults;
 document.getElementById("second").innerHTML = otherResults;
+document.getElementById("text-box").innerHTML = myResults+ "&" + otherResults;
 
 const colorbar = document.querySelector("#color-bar");
 const explainText = document.getElementById("combination-explain");
@@ -31,14 +30,6 @@ for(let i = 0; i<16; i++){
         otherresultNum = i;
     }
 }
-
-let isKorean = false;
-
-document.querySelector("#english-korean").addEventListener("click", function () {
-    isKorean = !isKorean;
-
-    (isKorean ? korean : english)();
-});
 
 function getPersonalText(result, isKorean) {
     switch(result) {
@@ -800,3 +791,12 @@ function english(){
 }
 
 english();
+
+let isKorean = false;
+
+document.querySelector("#english-korean").addEventListener("click", function () {
+    isKorean = !isKorean;
+
+    (isKorean ? korean : english)();
+});
+
