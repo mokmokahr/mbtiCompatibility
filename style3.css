@@ -82,6 +82,15 @@ header{
     border: solid 0.1rem gray;
 }
 
+#english-korean{
+    width: 5rem;
+    height: 1rem;
+    background-color: white;
+    display: inline-block;
+}
+#english-korean:hover{
+    cursor: pointer;
+}
 
 
 @media (max-width:768px){
@@ -100,3 +109,4 @@ header{
         height: 7rem;
     }
 }
+
