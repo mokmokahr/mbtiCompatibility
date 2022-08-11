@@ -34,7 +34,7 @@ header{
 }
 
 #gobtn>p{
-    font-size: 100%;
+    font-size: 3vh;
 }
 #gobtn:hover{
     cursor: pointer;

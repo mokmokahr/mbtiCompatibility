@@ -13,7 +13,6 @@ personalTextother.innerHTML = otherResults;
 document.getElementById("first").innerHTML = myResults;
 document.getElementById("second").innerHTML = otherResults;
 document.getElementById("text-box").innerHTML = myResults+ "&" + otherResults;
-
 const colorbar = document.querySelector("#color-bar");
 const explainText = document.getElementById("combination-explain");
 const longText = document.getElementById("detailed-explain");
@@ -31,19 +30,27 @@ for(let i = 0; i<16; i++){
     }
 }
 
+let isKorean = false;
+
+document.querySelector("#english-korean").addEventListener("click", function(){
+    isKorean = !isKorean;
+
+    (isKorean ? korean : english)();
+})
+
 function getPersonalText(result, isKorean) {
     switch(result) {
         case 0: {
             return isKorean ? "상냥한 성격의 이타주의자로 건강하고 밝은 사회 건설에 앞장서는 낭만형" : '';
         }
         case 1: {
-            return isKorean ? "창의적이며 항상 웃을 거리를 찾아다니는 활발한 성격으로 사람들과 자유롭게 어울리기를 좋아하는 넘치는 열정의 소유자" : '';
+            return isKorean ? "창의적이며 항상 웃을 거리를 찾아다니는 활발한 성격으로 사람들과 자유롭게 어울리기를 좋아하는 넘치는 열정의 소유자" : 'poetric, kind, and altruistic people, always eager to help a good cause';
         }
         case 2: {
-            return isKorean ? "조용하고 신비로우며 샘솟는 영감으로 지칠 줄 모르는 이상주의자" : '';
+            return isKorean ? "조용하고 신비로우며 샘솟는 영감으로 지칠 줄 모르는 이상주의자" : 'Enthusiastic, creative and sociable free spirits, who can always find a reason to smile';
         }
         case 3: {
-            return isKorean ? "넘치는 카리스마와 영향력으로 청중을 압도하는 리더형" : '';
+            return isKorean ? "넘치는 카리스마와 영향력으로 청중을 압도하는 리더형" : 'Charismatic and inspiring leaders, able to memorize their listeners';
         }
         case 4: {
             return isKorean ? "상상력이 풍부하며, 철두철미한 계획을 세우는 전략가형" : '';
@@ -76,7 +83,7 @@ function getPersonalText(result, isKorean) {
             return isKorean ? "타인을 향한 세심한 관심과 사교적인 성향으로 사람들 내에서 인기가 많으며, 타인을 돕는데 열성적인 세심형" : '';
         }
         case 14: {
-            return isKorean ? "사실에 근거하여 사고하며, 이들의 행동이나 결정 사항에 한 치의 의심을 사지않는 현실주의자형" : '';
+            return isKorean ? "사실에 근거하여 사고하며, 행동이나 결정 사항에 한 치의 의심을 사지않는 현실주의자형" : 'practical and fact-minded individuals, whose relativity cannot be doubted';
         }
         case 15: {
             return isKorean ? "현실을 잘 파악하고 리더로서 역할도 잘 수행하는 체계적인 성격의 소유자" : '';
@@ -791,12 +798,3 @@ function english(){
 }
 
 english();
-
-let isKorean = false;
-
-document.querySelector("#english-korean").addEventListener("click", function () {
-    isKorean = !isKorean;
-
-    (isKorean ? korean : english)();
-});
-

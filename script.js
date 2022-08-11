@@ -3,22 +3,11 @@ const free = document.getElementById("free");
 const startbtn = document.getElementById("gobtn");
 const title = document.getElementById("name");
 
-let counter = 0;
-
+let isKorean = false;
 function translate(){
-    counter++;
-    console.log("wow");
+    isKorean = !isKorean;
+    (isKorean?korean:english())();
 }
-
-function repeat(){
-    if(counter%2 == 0){
-        //english();  
-    }
-    else{
-        korean();
-    }
-}
-
 setInterval(repeat,1000);
 
 function goNextPage(){
