@@ -40,53 +40,53 @@ document.querySelector("#english-korean").addEventListener("click", function(){
 
 function getPersonalText(result, isKorean) {
     switch(result) {
-        case 0: {
-            return isKorean ? "상냥한 성격의 이타주의자로 건강하고 밝은 사회 건설에 앞장서는 낭만형" : '';
+        case 0: {//infp
+            return isKorean ? "항상 선을 행할 준비가 되어있는 부드럽고 친절한 이타주의자" : 'Poetric, kind, and altruistic people, always eager to help a good cause';
         }
-        case 1: {
-            return isKorean ? "창의적이며 항상 웃을 거리를 찾아다니는 활발한 성격으로 사람들과 자유롭게 어울리기를 좋아하는 넘치는 열정의 소유자" : 'poetric, kind, and altruistic people, always eager to help a good cause';
+        case 1: {//enfp
+            return isKorean ? "열정적이고 창의적인 성격으로, 긍정적으로 삶을 바라보는 사교적이면서도 자유로운 영혼" : 'Enthusiastic, creative and sociable free spirits, who can always find a reason to smile';
         }
-        case 2: {
-            return isKorean ? "조용하고 신비로우며 샘솟는 영감으로 지칠 줄 모르는 이상주의자" : 'Enthusiastic, creative and sociable free spirits, who can always find a reason to smile';
+        case 2: {//infj
+            return isKorean ? "차분하고 신비한 분위기를 풍기는 성격으로, 다른 사람에게 의욕을 불어넣어주는 이상주의자" : 'Quiet and mystical, yet very inspiring and tireless idealists.';
         }
-        case 3: {
-            return isKorean ? "넘치는 카리스마와 영향력으로 청중을 압도하는 리더형" : 'Charismatic and inspiring leaders, able to memorize their listeners';
+        case 3: {//enfj
+            return isKorean ? "청중을 사로잡고 의욕을 불어넣는 카리스마 넘치는 지도자" : 'Charismatic and inspiring leaders, able to memorize their listeners';
         }
-        case 4: {
-            return isKorean ? "상상력이 풍부하며, 철두철미한 계획을 세우는 전략가형" : '';
+        case 4: {//intj
+            return isKorean ? "모든 일에 대해 계획을 세우며 상상력이 풍부한 전략가" : 'Imaginative and strategic thinkers, with a plan for everythinig';
         }
-        case 5: {
-            return isKorean ? "대담하면서도 상상력이 풍부한 강한 의지의 소유자로 다양한 방법을 모색하거나 여의치 않을경우 새로운 방안을 창출하는 리더형" : '';
+        case 5: {//entj
+            return isKorean ? "항상 문제해결 방법을 찾아내는 성격으로, 대담하고 상상력이 풍부하며 의지가 강력한 지도자" : 'Bold, imaginative and strong-willed leaders, always finding a way - or making one';
         }
-        case 6: {
-            return isKorean ? "끊임없이 새로운 지식에 목말라하는 혁신가형" : '';
+        case 6: {//intp
+            return isKorean ? "모든 일에 대해 계획을 세우며 상상력이 풍부한 전략가" : 'Innovate inventors with an unquenchable thirst for knowledge.';
         }
-        case 7: {
-            return isKorean ? "지적인 도전을 두려워하지 않는 똑똑한 호기심형" : '';
+        case 7: {//entp
+            return isKorean ? "지적 도전을 즐기는 영리하고 호기심이 많은 사색가" : 'Smart and curious thinkers who cannot resist an intellectual challenge.';
         }
-        case 8: {
-            return isKorean ? "항시 새로운 것을 찾아 시도하거나 도전할 준비가 되어 있는 융통성 있는 성격의 매력 넘치는 예술가형" : '';
+        case 8: {//isfp
+            return isKorean ? "항시 새로운 경험을 추구하는 유연하고 매력 넘치는 예술가" : 'Flexible and charming artists, always ready to explore and experience something new.';
         }
-        case 9: {
-            return isKorean ? "주위에 있으면 인생이 지루할 새가 없을 정도로 즉흥적이며 열정과 에너지가 넘치는 연예인형" : '';
+        case 9: {//esfp
+            return isKorean ? "즉흥적이고 넘치는 에너지와 열정으로 주변 사람을 즐겁게 하는 연예인" : 'Spontaneous, energetic and enthusiastic people - life is never boring around them.';
         }
-        case 10: {
-            return isKorean ? "대담하고 현실적인 성향으로 다양한 도구 사용에 능숙한 탐험형" : '';
+        case 10: {//istp
+            return isKorean ? "대담하면서도 현실적인 성격으로, 모든 종류의 도구를 자유자재로 다루는 장인" : 'Bold and practical experimenters, masters of all kinds of tools.';
         }
-        case 11: {
-            return isKorean ? "벼랑 끝의 아슬아슬한 삶을 진정으로 즐길 줄 아는 이들로 명석한 두뇌와 에너지, 그리고 뛰어난 직관력을 가지고 있는 유형" : '';
+        case 11: {//estp
+            return isKorean ? "위험을 기꺼이 감수하는 성격으로, 영리하고 에너지 넘치며 관찰력이 뛰어난 사업가" : 'Smart, energetic and very perceptive people, who truly enjoy living on the edge.';
         }
-        case 12: {
-            return isKorean ? "소중한 이들을 수호하는 데 심혈을 기울이는 헌신적이며 성실한 방어자형" : '';
+        case 12: {//isfj
+            return isKorean ? "주변 사람을 보호할 준비가 되어 있는 헌신적이고 따뜻한 수호자" : 'Very dedicated and warm protectors, always ready to defend their loved ones.';
         }
-        case 13: {
-            return isKorean ? "타인을 향한 세심한 관심과 사교적인 성향으로 사람들 내에서 인기가 많으며, 타인을 돕는데 열성적인 세심형" : '';
+        case 13: {//esfj
+            return isKorean ? "배려심이 넘치고 항상 다른 사람을 도울 준비가 되어있는 성격으로, 인기가 많고 사교성이 높은 마당발" : 'Extraordinarily caring, social and popular people, always eager to help.';
         }
-        case 14: {
-            return isKorean ? "사실에 근거하여 사고하며, 행동이나 결정 사항에 한 치의 의심을 사지않는 현실주의자형" : 'practical and fact-minded individuals, whose relativity cannot be doubted';
+        case 14: {//istj
+            return isKorean ? "사실을 중시하는 믿음직한 현실주의자" : 'practical and fact-minded individuals, whose relativity cannot be doubted';
         }
-        case 15: {
-            return isKorean ? "현실을 잘 파악하고 리더로서 역할도 잘 수행하는 체계적인 성격의 소유자" : '';
+        case 15: {//estj
+            return isKorean ? "사물과 사람을 관리하는 데 뛰어난 능력을 지닌 경영자" : 'Excellent administrators, unsurpassed at managing things - or people.';
         }
     }
 }

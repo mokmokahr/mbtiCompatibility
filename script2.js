@@ -1,5 +1,14 @@
-let counter = sessionStorage.getItem("translateCount");
-console.log(counter);
+let isKorean = sessionStorage.getItem("isKorean");
+console.log(isKorean);
+
+
+if(isKorean == 'true'){
+    korean();
+}
+else{
+    english();
+}
+
 
 let resultMe = ['','','',''];
 let resultOther = ['','','',''];
@@ -66,10 +75,21 @@ function getResult(){
     }
     console.log(resultOther_);
 
-    //코드 html3.html로 보내기
+    //코드 javascript3.html로 보내기
     let myResults = resultMe_;
     let otherResults = resultOther_;
 
     sessionStorage.setItem("myresult", myResults);//보낼데이터 설정
     sessionStorage.setItem("otherresult", otherResults);
 }
+
+function korean(){
+    document.getElementById("you").innerHTML = "나";
+    document.getElementById("other").innerHTML = "상대";
+    document.getElementById("text-box").innerHTML = "MBTI를 체크해주세요";
+}
+function english(){
+    console.log("english");
+}
+
+sessionStorage.setItem("isKorean",isKorean);
