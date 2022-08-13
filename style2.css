@@ -91,6 +91,11 @@ input{
 .purple_{
     border-color: #88619A;
 }
+
+#again{
+    border: none;
+    
+}
 @media (max-width:768px){
     #you-checkbox,#other-checkbox{
         padding: 3%;

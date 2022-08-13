@@ -82,13 +82,17 @@ header{
     border: solid 0.1rem gray;
 }
 
-#english-korean{
+#english-korean,#again{
     width: 5rem;
     height: 1rem;
     background-color: white;
     display: inline-block;
 }
 #english-korean:hover{
+    cursor: pointer;
+}
+
+#again:hover{
     cursor: pointer;
 }
 

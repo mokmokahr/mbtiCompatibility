@@ -80,9 +80,6 @@ radio:hover{
         background-color: white;
     }
     #gopage{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
     }
 }
 
