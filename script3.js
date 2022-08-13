@@ -221,24 +221,29 @@ switch(myresultNum){
             case 6:
             case 7:
                 condition = 0;
+                break;
             case 1:
             case 4:
             case 5:
                 condition = 1;
+                break;
             case 2:
             case 3:
             case 8:
             case 10:
             case 11:
                 condition = 2;
+                break;
             case 3:
             case 9:
             case 12:
             case 14:
                 condition = 3;
+                break;
             case 13:
             case 15:
                 condition = 4;
+                break;
 
         }
         break;
@@ -247,9 +252,11 @@ switch(myresultNum){
             case 12:
             case 13:
                 condition = 0;
+                break;
             case 11:
             case 15:
                 condition = 1;
+                break;
             case 0:
             case 1:
             case 2:
@@ -259,12 +266,15 @@ switch(myresultNum){
             case 10:
             case 14:
                 condition = 2;
+                break;
             case 3:
             case 4:
                 condition = 3;
+                break;
             case 5:
             case 7:
                 condition = 4;
+                break;
         }
         break;
     case 3://4
@@ -273,24 +283,28 @@ switch(myresultNum){
             case 7:
             case 8:
                 condition = 0;
+                break;
             case 4:
             case 10:
                 condition = 1;
+                break;
             case 0:
             case 1:
             case 3:
             case 6:
             case 9:
                 condition = 2;
+                break;
             case 2:
             case 11:
             case 12:
             case 14:
                 condition = 3;
+                break;
             case 13:
             case 15:
                 condition = 4;
-
+                break;
         }
         break;
     case 4://5
@@ -298,9 +312,11 @@ switch(myresultNum){
             case 11:
             case 15:
                 condition = 0;
+                break;
             case 1:
             case 3:
                 condition = 1;
+                break;
             case 4:
             case 6:
             case 7:
@@ -308,14 +324,17 @@ switch(myresultNum){
             case 13:
             case 14:
                 condition = 2;
+                break;
             case 0:
             case 2:
             case 5:
                 condition = 3;
+                break;
             case 8:
             case 10:
             case 12:
                 condition = 4;
+                break;
         }
         break;
 
@@ -355,7 +374,7 @@ function english(){
     personalTextme.innerHTML = myResults+'</br>' + getPersonalText(myresultNum, false);
     personalTextother.innerHTML = otherResults+'</br>' + getPersonalText(otherresultNum, false);
 
-    switch(condition) {
+    switch(condition){
         case 0: {
             colorbar.style.backgroundColor = "#0000ff";
             explainText.style.backgroundColor = "#0000ff";
@@ -394,8 +413,8 @@ function english(){
     }
 }
 
-english();
-
 document.querySelector("#again").addEventListener("click", function(){
     window.location.href = "index.html";
 })
+
+english();

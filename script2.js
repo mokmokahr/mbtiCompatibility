@@ -16,7 +16,7 @@ let resultOther = ['','','',''];
 let resultMe_ = "";
 let resultOther_ = "";
 
-let compare = ['infp','enfp','infj','enfj','intj','entj','intp','entp','isfp','esfp','istp','estp','isfj','esfj','istj','estj']
+let compare = ['infp','enfp','infj','enfj','intj','entj','intp','entp','isfp','esfp','istp','estp','isfj','esfj','istj','estj'];
 
 
 function goNextPage(){
