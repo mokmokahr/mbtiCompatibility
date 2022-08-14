@@ -34,7 +34,6 @@ let isKorean = false;
 
 document.querySelector("#english-korean").addEventListener("click", function(){
     isKorean = !isKorean;
-
     (isKorean ? korean : english)();
 })
 
@@ -93,74 +92,6 @@ function getPersonalText(result, isKorean) {
         }
         case 4: {//estj
             return isKorean ? "사물과 사람을 관리하는 데 뛰어난 능력을 지닌 경영자" : 'Excellent administrators, unsurpassed at managing things - or people.';
-        }
-    }
-}
-
-function korean(condition) {
-    personalTextme.innerHTML = myResults+'</br>' + getPersonalText(myresultNum, true);
-    personalTextother.innerHTML = otherResults+'</br>' + getPersonalText(otherresultNum, true);
-
-    switch(condition){
-        case 0:
-            explainText.innerHTML = "이상적인 ";
-            longText.innerHTML = "문제가 생겨도 잘 해결되고 관계가 자연스럽게 발전됩니다.";
-            break;
-        case 1:
-            explainText.innerHTML = "끈끈한 ";
-            longText.innerHTML = "약간의 어려움이 있을 수 있지만, 금방 타협점을 찾아 좋은관계가 유지될 수 있습니다.";
-            break;
-        case 2:
-            explainText.innerHTML = "잠재적 ";
-            longText.innerHTML = "좋은 관계를 위해서는 서로의 가치관에 변화가 있어야 합니다..";
-            break;
-        case 3:
-            explainText.innerHTML = "충돌";
-            longText.innerHTML = "둘은 잘 맞지 않을 수 있지만, 서로에대한 양보와 이해가 있다면 관계가 유지될 수 있습니다";
-            break;
-        case 4:
-            explainText.innerHTML = "위험";
-            longText.innerHTML = "서로가 서로를 이해하고 공감해야지만 관계가 유지될 수 있을 것 입니다. 그렇다고 너무 낙심하지는 마세요 테스트는 테스트일 뿐 이니까요!";
-            break;
-    }
-
-    explainText.innerHTML += '관계'
-}
-
-function english(){
-    personalTextme.innerHTML = myResults+'</br>' + getPersonalText(myresultNum, false);
-    personalTextother.innerHTML = otherResults+'</br>' + getPersonalText(otherresultNum, false);
-
-    switch(condition) {
-        case 0: {
-            colorbar.style.backgroundColor = "#0000ff";
-            explainText.style.backgroundColor = "#0000ff";
-            explainText.innerHTML = "ideal relationship";
-            longText.innerHTML = "Problems are resolved well and the relationship develops naturally.";
-        }
-        case 1: {
-            colorbar.style.backgroundColor = "#87ceeb";
-            explainText.style.backgroundColor = "#87ceeb";
-            explainText.innerHTML = "sticky relationship";
-            longText.innerHTML = "There may be difficulties, but you find a compromise";
-        }
-        case 2: {
-            colorbar.style.backgroundColor = "#00ff00";
-            explainText.style.backgroundColor = "#00ff00";
-            explainText.innerHTML = "potential relationship";
-            longText.innerHTML = "For a strong relationship, you need to find a change in each other's values.";
-        }
-        case 3: {
-            colorbar.style.backgroundColor = "#e4ae3a";
-            explainText.style.backgroundColor = "#e4ae3a";
-            explainText.innerHTML = "conflicting relationship";
-            longText.innerHTML = "It can only be maintained through compromise and maturity";
-        }
-        case 4: {
-            colorbar.style.backgroundColor = "#ff6969";
-            explainText.style.backgroundColor = "#ff6969";
-            explainText.innerHTML = "inappropriate relationship";
-            longText.innerHTML = "Both of them must give in unconditionally and need empathy.";
         }
     }
 }
@@ -373,7 +304,6 @@ function korean() {
 function english(){
     personalTextme.innerHTML = myResults+'</br>' + getPersonalText(myresultNum, false);
     personalTextother.innerHTML = otherResults+'</br>' + getPersonalText(otherresultNum, false);
-
     switch(condition){
         case 0: {
             colorbar.style.backgroundColor = "#0000ff";
