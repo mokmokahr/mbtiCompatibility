@@ -1,15 +1,3 @@
-let isKorean = sessionStorage.getItem("isKorean");
-console.log(isKorean);
-
-
-if(isKorean == 'true'){
-    korean();
-}
-else{
-    english();
-}
-
-
 let resultMe = ['','','',''];
 let resultOther = ['','','',''];
 
@@ -83,13 +71,24 @@ function getResult(){
     sessionStorage.setItem("otherresult", otherResults);
 }
 
+document.querySelector("#text-box").style.color = "white";
+
 function korean(){
     document.getElementById("you").innerHTML = "나";
     document.getElementById("other").innerHTML = "상대";
     document.getElementById("text-box").innerHTML = "MBTI를 체크해주세요";
 }
 function english(){
-    console.log("english");
+    document.getElementById("you").innerHTML = "ME";
+    document.getElementById("other").innerHTML = "OTHER";
+    document.getElementById("text-box").innerHTML = "Let me know you and other person's MBTI.";
 }
 
-sessionStorage.setItem("isKorean",isKorean);
+let isKorean = true;
+function translate(){
+    isKorean = !isKorean;
+    (isKorean?korean:english)();
+}
+document.querySelector("#translation").addEventListener("click", translate);
+
+korean();
