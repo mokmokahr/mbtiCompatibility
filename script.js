@@ -5,7 +5,7 @@ const title = document.getElementById("name");
 const gobtn = document.getElementById("gobtn");
 const develops = document.getElementById("developer");
 
-let isKorean = false;
+let isKorean = true;
 function translate(){
     sessionStorage.setItem("isKorean",isKorean);
     isKorean = !isKorean;
@@ -34,3 +34,5 @@ function english(){
 }
 
 document.querySelector("#translation").addEventListener("click", translate);
+
+korean();

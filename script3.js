@@ -30,7 +30,7 @@ for(let i = 0; i<16; i++){
     }
 }
 
-let isKorean = false;
+let isKorean = true;
 
 document.querySelector("#english-korean").addEventListener("click", function(){
     isKorean = !isKorean;
@@ -678,3 +678,4 @@ document.querySelector("#again").addEventListener("click", function(){
 })
 
 english();
+korean();
