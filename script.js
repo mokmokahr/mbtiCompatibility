@@ -6,7 +6,6 @@ const gobtn = document.getElementById("gobtn");
 const develops = document.getElementById("developer");
 
 let isKorean = true;
-let a = 1;
 function translate(){
     isKorean = !isKorean;
     (isKorean?korean:english)();

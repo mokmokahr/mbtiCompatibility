@@ -64,7 +64,7 @@ function getPersonalText(result, isKorean) {
             return isKorean ? "항상 문제해결 방법을 찾아내는 성격으로, 대담하고 상상력이 풍부하며 의지가 강력한 지도자" : 'Bold, imaginative and strong-willed leaders, always finding a way - or making one';
         }
         case 3: {//intp
-            return isKorean ? "모든 일에 대해 계획을 세우며 상상력이 풍부한 전략가" : 'Innovate inventors with an unquenchable thirst for knowledge.';
+            return isKorean ? "지식에 목말라있는 혁신적인 발명가" : 'Innovate inventors with an unquenchable thirst for knowledge.';
         }
         case 1: {//entp
             return isKorean ? "지적 도전을 즐기는 영리하고 호기심이 많은 사색가" : 'Smart and curious thinkers who cannot resist an intellectual challenge.';
